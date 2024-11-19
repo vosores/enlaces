@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisca Tapia | Mis Enlaces</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Foto de perfil -->
+        <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-pic">
+
+        <!-- Nombre y descripción -->
+        <h1>Francisca Tapia</h1>
+        <p>Profesora de Física y entusiasta del clima espacial</p>
+
+        <!-- Botones de enlaces -->
+        <div class="links">
+            <a href="https://linkedin.com/in/franciscatapia" target="_blank"><i class="fas fa-link"></i> LinkedIn</a>
+            <a href="https://github.com/franciscatapia" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:francisca.tapia@example.com"><i class="fas fa-envelope"></i> Correo Electrónico</a>
+            <a href="#" class="vcard" onclick="toggleVCard()"><i class="fas fa-id-card"></i> Ver Información vCard</a>
+        </div>
+
+        <!-- Información de la vCard (expandible) -->
+        <div class="vcard-info" id="vcard-info">
+            <p><strong>Nombre:</strong> Francisca Tapia Donoso</p>
+            <p><strong>Organización:</strong> Universidad Santo Tomás</p>
+            <p><strong>Título:</strong> Profesora de Física</p>
+            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+            <p><strong>Email:</strong> francisca.tapia@example.com</p>
+            <div class="contact-actions">
+                <a href="contacto.vcf" download="Francisca_Tapia.vcf" class="contact-button">
+                    <i class="fas fa-download"></i> Descargar Contacto
+                </a>
+                <a href="contacto.vcf" download="Francisca_Tapia.vcf" class="contact-button add-contact-button">
+                    <i class="fas fa-user-plus"></i> Agregar Contacto
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para expandir o contraer la información de la vCard
+        function toggleVCard() {
+            const vcardInfo = document.getElementById('vcard-info');
+            if (vcardInfo.style.display === 'none' || vcardInfo.style.display === '') {
+                vcardInfo.style.display = 'block';
+            } else {
+                vcardInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

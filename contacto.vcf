@@ -1,0 +1,8 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Francisca Tapia Donoso
+ORG:Universidad Santo Tomás
+TITLE:Profesora de Física
+TEL;TYPE=WORK,VOICE:+56912345678
+EMAIL:francisca.tapia@example.com
+END:VCARD
