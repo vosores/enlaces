@@ -156,3 +156,56 @@ p {
 .timeline p {
     margin: 0;
 }
+
+
+/* Mejora de estilos responsive */
+
+/* Ajuste general para contenedor */
+.container {
+    width: 90%; /* Asegura que se ajuste al ancho de la pantalla */
+    max-width: 400px; /* Limita el ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Asegura que las imágenes sean completamente responsive */
+img {
+    max-width: 100%; /* Limita el ancho al contenedor */
+    height: auto; /* Mantén las proporciones */
+}
+
+/* Ajusta tamaños de fuente y márgenes para dispositivos móviles */
+h1 {
+    font-size: 1.5rem; /* Escalable según el tamaño base */
+}
+
+p {
+    font-size: 1rem; /* Texto adaptativo */
+}
+
+/* Mejora botones para facilidad de toque */
+.links a {
+    padding: 12px 20px; /* Aumenta el área de toque */
+    font-size: 1rem;
+}
+
+/* Imágenes del timeline */
+.timeline-img {
+    width: 20%; /* Ajuste relativo */
+    max-width: 60px; /* Límite para pantallas pequeñas */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Ajusta el tamaño del título */
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        padding: 8px 10px; /* Reduce el tamaño de los botones */
+    }
+}
